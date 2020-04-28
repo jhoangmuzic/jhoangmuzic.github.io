@@ -1,0 +1,106 @@
+/* === Typography === */
+body {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size:72pt;
+}
+
+h2 {
+    font-family: 'Helvetica';
+    font-size: 24pt;
+    font-weight: bold;
+}
+p{
+    font-family:'Helvetica';
+    font-size:14pt;
+}
+
+footer p{
+    font-family: 'Helvetica';
+    font-size:10pt;
+    font-style:oblique;
+    color: #cbcbcb;
+}
+/* === Backgrounds === */
+header{
+    background-color:#000000;
+}
+#splash{
+    background-image: url("heading.jpg");
+    background-size:cover;
+}
+#container{
+   background-color: #cdcdcd; 
+}
+footer{
+    background-color:#000000;
+}
+#advertisement{
+    background-color:#ff0000;
+}
+/* === Box Model === */
+#splash{
+    height:400px;
+}
+nav, footer, #foodarticles{
+    padding:25px;
+}
+article{
+    margin-bottom: 100px;
+    }
+a{
+    margin-right:25px;
+}
+/* === Layout === */
+.floatleft{
+    float:left;
+    margin-right:25px;
+    margin-bottom:25px;
+}
+#container{
+    width:1000px;
+    margin:auto;
+}
+main{
+    display:grid;
+    grid-template-columns:75% 25%;
+}
+#splash{
+    grid-column-start:1;
+    grid-column-end:3;
+    padding-top: 175px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    text-align:center;
+}
+#advertisement{
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    padding:25px;
+    width:425px;
+}
+footer{
+    text-align:center;
+}
