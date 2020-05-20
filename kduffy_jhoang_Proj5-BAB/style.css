@@ -1,0 +1,233 @@
+body {
+  background-color: #010006;
+  font-family: "Roboto", sans-serif;
+  margin: 2em;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-style: italic;
+  color: #f6fbfd;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  color: #f6fbfd;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10pt;
+  color: #f6fbfd;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Header*/
+nav a {
+  text-decoration: none;
+  color: #f6fbfd;
+  display: inline;
+  padding-right: 50px;
+  width: 10px;
+}
+
+nav a:hover {
+  color: #FFF141;
+}
+
+#logo {
+  position: fixed;
+  top: 0px;
+  display: grid;
+  width: 100%;
+  background-color: #010006;
+  z-index: 5;
+}
+
+header {
+  position: fixed;
+  top: 130px;
+  left: 0px;
+  width: 100%;
+  background-color: #b42515;
+  text-align: center;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  z-index: 4;
+}
+
+/*Home*/
+.mainphoto {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: auto;
+  width: 100%;
+}
+
+.sign-up-button {
+  height: 60px;
+  width: 250px;
+  box-shadow: 5px 10px;
+  font-size: 14pt;
+  box-shadow: 2px 2px rgb(0, 30, 0, 0.5);
+  position: absolute;
+  transform: translate(-50%, -675%);
+  color: #b42515;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18pt;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.sign-up-button:hover {
+  background-color: #b42515;
+  color: #f6fbfd;
+}
+
+.homegrid {
+  background-size: cover;
+  background-position: center top;
+  min-height: 300px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 33.33% 66%;
+}
+
+#phil {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding-right: 50px;
+}
+
+#socialmedia {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: auto;
+}
+
+/*Staff*/
+.description {
+  padding-top: 160px;
+  color: #f6fbfd;
+  font-family: "Roboto", sans-serif;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+/*Programs*/
+.programsgridcontainer {
+  padding-top: 179px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.programsgridcontainer h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36pt;
+  color: #f6fbfd;
+  text-shadow: 2px 2px #010006;
+}
+
+.programsgridcontainer h1:hover {
+  color: #FFF141;
+}
+
+#bayfitprogram {
+  background-image: url("img/bayfitprogram.jpg");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brazilianjjft {
+  background-image: url("img/bjjft.jpg");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#crosstrain {
+  background-image: url("img/crosstrain.jpg");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardiokickboxing {
+  background-image: url("img/kickbox.png");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxingfullcontact {
+  background-image: url("img/fullcontact.png");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mmafightteam {
+  background-image: url("img/mma2.jpg");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#muaythai {
+  background-image: url("img/muaythai.png");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instructionalboxing {
+  background-image: url("img/kettelbell.png");
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer*/
+#credits {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10pt;
+  padding: 15px;
+  background-color: #b42515;
+  color: #f6fbfd;
+  line-height: 1.5;
+}
