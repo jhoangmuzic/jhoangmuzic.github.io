@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<title>Untitled Document</title>
+	<script>
+let dango = true;
+let fireworks;
+function preload(){
+    fireworks = loadImage("Fireworks.html");
+    
+}
+function setup() {
+  createCanvas(600, 450);
+    image(fireworks,0,0);
+}
+
+function draw() {
+  background("#cdfcff");
+  noStroke();
+  clickText();
+  dangoShadow();
+  dangoPink();
+  dangoYellow();
+  dangoGreen();
+  stick();
+}
+
+function mousePressed() {
+    if(dangoPink()){
+    dangoPink.color("red");
+    } else{
+        dangoPink();
+        
+    }
+}
+
+function dangoShadow() {
+  fill("#adfaff");
+  circle(457, 112, 100);
+  circle(407, 187, 100);
+  circle(357, 262, 100);
+  stroke("#adfaff");
+  line(333, 292, 263, 387);
+  noStroke();
+}
+
+function dangoPink() {
+  fill("#ffd2da");
+  circle(450, 100, 100);
+}
+
+function dangoYellow() {
+  fill("#fff9d2");
+  circle(400, 175, 100);
+}
+
+function dangoGreen() {
+  fill("#bcffd6");
+  circle(350, 250, 100);
+}
+
+function stick() {
+  stroke("#ffe299");
+  strokeWeight(10);
+  line(330, 280, 260, 375);
+}
+
+function clickText() {
+  fill("#00d1fc");
+  textSize(24);
+  textFont('Georgia');
+  text("Click Me!", 285, 90); //pink dango
+  text("Or Me!", 465, 215); //yellow dango
+  text("Or Me!", 205, 260); //green dango
+}
+	</script>
+</head>
+
+<body>
+</body>
+</html>
