@@ -36,7 +36,7 @@ function draw() {
     background("#cdfcff");
     image(fireworksBg, 0, 0, 755, 465);
     noStroke();
-    Text();
+    allText();
     dangoShadow();
 
     rectMode(RADIUS);
@@ -120,7 +120,7 @@ function keyTyped() {
 
 }
 
-function Text() {
+function allText() {
     textStyle(BOLD);
     fill("#ffd111");
     textSize(18);
