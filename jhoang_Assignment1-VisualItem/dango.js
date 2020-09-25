@@ -24,7 +24,7 @@ let festivalAudio;
 
 function preload() {
     fireworksBg = loadImage("https:jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/fireworks.png");
-    festivalAudio = createAudio("https:jhoangmuzic.github.io/blob/master/jhoang_Assignment1-VisualItem/Beautiful%20Japanese%20Music%20-%20Japanese%20Festival.mp3");
+    festivalAudio = createAudio("https:jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/Beautiful%20Japanese%20Music%20-%20Japanese%20Festival.mp3");
 }
 
 function setup() {
@@ -36,7 +36,7 @@ function draw() {
     background("#cdfcff");
     image(fireworksBg, 0, 0, 755, 465);
     noStroke();
-    clickText();
+    Text();
     dangoShadow();
 
     rectMode(RADIUS);
@@ -120,7 +120,7 @@ function keyTyped() {
 
 }
 
-function clickText() {
+function Text() {
     textStyle(BOLD);
     fill("#ffd111");
     textSize(18);
@@ -128,6 +128,8 @@ function clickText() {
     text("Click Me!", 660, 100); //pink dango
     text("Or Me!", 615, 180); //yellow dango
     text("Or Me!", 565, 250); //green dango
+    textSize(48);
+    text("Happy New Year!",30,435);
 }
 
 function dangoShadow() {
