@@ -23,8 +23,8 @@ let fireworksBg;
 let festivalAudio;
 
 function preload() {
-    fireworksBg = loadImage("fireworks.png");
-    festivalAudio = createAudio("festivalAudio.mp3");
+    fireworksBg = loadImage("https://jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/fireworks.png");
+    festivalAudio = createAudio("https://jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/Beautiful%20Japanese%20Music%20-%20Japanese%20Festival.mp3");
 }
 
 function setup() {
