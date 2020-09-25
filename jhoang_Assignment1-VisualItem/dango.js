@@ -19,12 +19,10 @@ let faceColor = '#382e2e';
 //toggle colors
 let toggleColors = true;
 
-//firework bg
-let bg;
+let fireworksBg;
 
 function preload(){
-    bg=loadImage('fireworks.jpg');
-    
+    fireworksBg=loadImage("https:jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/fireworks.png");
 }
 
 function setup() {
@@ -33,7 +31,7 @@ function setup() {
 
 function draw() {
     background("#cdfcff");
-    image(bg,0,0);
+    image(fireworksBg,0,0, 800,500);
     noStroke();
     clickText();
     dangoShadow();
