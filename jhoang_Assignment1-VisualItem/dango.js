@@ -1,15 +1,15 @@
 //pink dango
-let circleX1 = 450;
+let circleX1 = 600;
 let circleY1 = 100;
 let dangoColor1 = '#f5b0c6';
 
 //yellow dango
-let circleX2 = 400;
+let circleX2 = 550;
 let circleY2 = 175;
 let dangoColor2 = '#fdea7d';
 
 //green dango
-let circleX3 = 350;
+let circleX3 = 500;
 let circleY3 = 250;
 let dangoColor3 = '#81ff8f';
 
@@ -20,18 +20,21 @@ let faceColor = '#382e2e';
 let toggleColors = true;
 
 let fireworksBg;
+let festivalAudio;
 
-function preload(){
-    fireworksBg=loadImage("https:jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/fireworks.png");
+function preload() {
+    fireworksBg = loadImage("https:jhoangmuzic.github.io/jhoang_Assignment1-VisualItem/fireworks.png");
+    festivalAudio = createAudio("https:jhoangmuzic.github.io/blob/master/jhoang_Assignment1-VisualItem/Beautiful%20Japanese%20Music%20-%20Japanese%20Festival.mp3");
 }
 
 function setup() {
-    createCanvas(600, 450);
+    createCanvas(755, 450);
+    festivalAudio.autoplay(true);
 }
 
 function draw() {
     background("#cdfcff");
-    image(fireworksBg,0,0, 1000,500);
+    image(fireworksBg, 0, 0, 755, 465);
     noStroke();
     clickText();
     dangoShadow();
@@ -42,25 +45,25 @@ function draw() {
     fill(dangoColor1);
     circle(circleX1, circleY1, 100);
     fill(faceColor);
-    circle(423, 80, 10);
-    circle(454, 94, 10);
-    arc(435, 92, 18, 18, .12, PI + QUARTER_PI, CHORD);
+    circle(573, 80, 10);
+    circle(604, 94, 10);
+    arc(585, 92, 18, 18, .12, PI + QUARTER_PI, CHORD); //435
 
     //yellow dango
     fill(dangoColor2);
     circle(circleX2, circleY2, 100);
     fill(faceColor);
-    circle(365, 166, 10);
-    circle(393, 179, 10);
-    arc(375, 180, 18, 18, .10, PI + QUARTER_PI, CHORD);
+    circle(515, 166, 10);
+    circle(543, 179, 10);
+    arc(525, 180, 18, 18, .10, PI + QUARTER_PI, CHORD); //375
 
     //green dango
     fill(dangoColor3);
     circle(circleX3, circleY3, 100);
     fill(faceColor)
-    circle(325, 225, 10);
-    circle(350, 235, 10);
-    arc(333, 239, 18, 18, .05, PI + QUARTER_PI, CHORD);
+    circle(475, 225, 10);
+    circle(500, 235, 10);
+    arc(483, 239, 18, 18, .05, PI + QUARTER_PI, CHORD); //333
 
     stick();
 
@@ -107,37 +110,38 @@ function mousePressed() {
     }
 }
 
-function keyTyped(){
-    if(key === 'n'){
+function keyTyped() {
+    if (key === 'n') {
         background("black");
-        
-    } else if (key === 'm'){
+
+    } else if (key === 'm') {
         background("#cdfcff");
     }
-    
+
 }
 
 function clickText() {
-    fill("#00d1fc");
-    textSize(24);
+    textStyle(BOLD);
+    fill("#ffd111");
+    textSize(18);
     textFont('Georgia');
-    text("Click Me!", 285, 90); //pink dango
-    text("Or Me!", 465, 215); //yellow dango
-    text("Or Me!", 205, 260); //green dango
+    text("Click Me!", 660, 100); //pink dango
+    text("Or Me!", 615, 180); //yellow dango
+    text("Or Me!", 565, 250); //green dango
 }
 
 function dangoShadow() {
-    fill("#84efff");
-    circle(457, 112, 100);
-    circle(407, 187, 100);
-    circle(357, 262, 100);
-    stroke("#84efff");
-    line(333, 292, 263, 387);
+    fill("#00265a");
+    circle(603, 110, 100);
+    circle(554, 185, 100);
+    circle(504, 260, 100);
+    stroke("#00265a");
+    line(480, 290, 410, 385);
     noStroke();
 }
 
 function stick() {
-    stroke("#ffe299");
+    stroke("#d17b00");
     strokeWeight(10);
-    line(330, 280, 260, 375);
+    line(480, 280, 410, 375);
 }
